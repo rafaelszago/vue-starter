@@ -1,24 +1,16 @@
 # vue-starter
 
-## Project setup
-```
-npm install
-```
+Starter template for Vue.js Applications
 
-### Compiles and hot-reloads for development
+## How to use
 ```
+git clone https://github.com/rafaelszago/vue-starter your-project
+
+cd your-project
+
+npm install
+
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+And them access http://localhost:8080/
