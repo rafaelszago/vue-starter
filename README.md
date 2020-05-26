@@ -1,34 +1,42 @@
-# vue-starter
+# Vue Starter
 
-Starter template for Vue.js Applications
+A Vue.js starter project template with essentials features
 
-## Features
+## Features 🎉
 
 - [X] Router
 - [x] Vuex modules
 - [X] Global componentes, directives, filters and mixins
 - [X] Layouts pattern
 - [x] Services pattern
+- [x] Apisauce
 - [X] Not Found Page
 
-## How to use
+## Installation
 
-1. Clone the project.
-
-```
-git clone https://github.com/rafaelszago/vue-starter
-```
-
-2. Install dependencies
+Make sure to have node `8.0+` and npm `5.0+` installed
 
 ```
-npm install
+$ git clone https://github.com/rafaelszago/vue-starter
+$ cd vue-starter
+#
+$ npm install
 ```
 
-3. Start development server
+## Usage
+
+### Development
 
 ```
-npm run serve
+# serve with hot reloading at localhost:8080
+$ npm run serve
 ```
 
-And them access http://localhost:8080/
+Go to http://localhost:8080/
+
+### Production
+
+```
+$ npm run build
+```
+
