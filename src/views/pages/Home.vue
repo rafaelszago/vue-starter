@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2>Home</h2>
-    <base-button>Base button</base-button>
+    <h1>Home</h1>
   </div>
 </template>
