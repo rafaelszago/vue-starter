@@ -1,20 +1,10 @@
 import apisauce from 'apisauce'
-import { StorageService } from '../services'
-import store from '../store'
 
-const api = apisauce.create({ baseURL: process.env.VUE_APP_API_URL })
+const api = apisauce.create({
+  baseURL: process.env.VUE_APP_API_URL
+})
 
 const ApiService = {
-  _errorHandler: null,
-
-  setHeader () {
-    api.setHeader('Authorization', `Bearer ${StorageService.getToken()}`)
-  },
-
-  removeHeader () {
-    api.setHeader('Authorization', false)
-  },
-
   index (resource, params) {
     return api.get(resource, params)
   },
@@ -38,7 +28,7 @@ const ApiService = {
   addErrorMonitor () {
     return api.addMonitor(async response => {
       if (response.status === 401) {
-        await store.dispatch('auth/logout')
+        // do something
       }
     })
   }
