@@ -2,7 +2,7 @@ import PagesLayout from '../layouts/Pages'
 
 const routes = [
   {
-    path: '/',
+    path: '',
     component: PagesLayout,
     children: [
       {
@@ -13,13 +13,13 @@ const routes = [
         path: 'home',
         name: 'home',
         component: () => import('../views/pages/Home.vue')
+      },
+      {
+        path: '*',
+        name: 'not-found',
+        component: () => import('../views/pages/NotFound.vue')
       }
     ]
-  },
-  {
-    path: '*',
-    name: 'not-found',
-    component: () => import('../views/pages/NotFound.vue')
   }
 ]
 
